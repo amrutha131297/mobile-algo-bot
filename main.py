@@ -49,7 +49,7 @@ async def run_strategy(context: ContextTypes.DEFAULT_TYPE):
 
 # ========= MAIN =========
 def main():
-    app = Application.builder().token(os.getenv("TELEGRAM_BOT_TOKEN")).build()
+    app = Application.builder().token(os.getenv("TELEGRAM_BOT_TOKEN","8428714129:AAERaYcX9fgLcQPWUwPP7z1C56EnvEf5jhQ")).build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("stop", stop))
